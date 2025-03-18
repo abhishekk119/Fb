@@ -42,8 +42,11 @@
 	
 .info {
 	font-size: 40px;
-	display: flex;
+	
 	}
+.container {
+	display: flex;
+}
 	
 .posts {
 	height: 500px;
@@ -217,7 +220,10 @@ function follo() {
  	
  <h2>Posts</h2>
  <div>
- 	<img src="Image2.jpg" class="pid"><p class="info"><strong>Abhishek Kabi</strong> &nbsp is in  &nbsp <strong>New York City</strong></p>
+	 <div class="container">
+ 	<img src="Image2.jpg" class="pid">
+	 <p class="info"><strong>Abhishek Kabi</strong> &nbsp is in  &nbsp <strong>New York City</strong></p>
+	 </div>
      <p style="font-size: 40px"> I am at New York, Times Square. </p>
      <img src="nyts.jpg" class="posts">
      	<p style="display: none" id="liked">You liked this </p>
