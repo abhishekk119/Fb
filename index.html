@@ -4,50 +4,68 @@
   <style>
   button {
   border: solid 1px;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: blue;
   color: white;
   margin: 8px 0 0 0;
   padding: 5px;
-  width: 75px;
+  height: 75px;
+  width: 175px;
+  font-size: 30px;
 }
 
 .proPic {
-	height: 150px;
-	width: 150px;
-	border-radius: 75px;
+	height: 350px;
+	width: 350px;
+	border-radius: 175px;
 	position: absolute;
 	left: 10px;
-	top: 110px;
+	top: 170px;
 	}
 	
 .add {
 	border: solid 1px;
-	border-radius: 5px;
-	width: 150px;
+	border-radius: 10px;
 	color: white;
 	background-color: blue;
+	width: 270px;
 	}
 	
 .pid {
-	height: 20px;
-	width: 20px;
-	margin: 0 3px 0 0;
-	border-radius: 10px;
+	height: 70px;
+	width: 70px;
+	margin: 31px 3px 0 0;
+	border-radius: 35px;
 	
 	}
 	
 .info {
+	font-size: 45px;
+	}
+
+#container {
+    display: flex;
+	}
+	
+#container2 {
+	display: flex;
+	}
+
+#container3 {
+	display: flex;
+	}
+
+#container4 {
 	display: flex;
 	}
 	
 .posts {
-	height: 250px;
+	height: 500px;
 	width: 100%;
 	}
 	
 .cover {
-	height: 235px;
+	height: 450px;
 	width: 100%;
 	position: relative;
 	border-radius: 5px;
@@ -69,30 +87,53 @@
 	}
 	
 #ig {
-	height: 20px;
-	width: 20px;
+	height: 60px;
+	width: 60px;
 	}
 	
 a {
 	color: gray;
 	display: flex;
+	font-size: 45px;
 	}
 	
 #comm1 {
 	margin-top: 5px;
+	height: 70px;
+	width: 500px;
 	}
 	
 #comm2 {
 	margin-top: 5px;
+	height: 70px;
+	width: 500px;
 	}
 	
 #comm3 {
 	margin-top: 5px;
+	height: 70px;
+	width: 500px;
 	}
 	
 #comm4 {
 	margin-top: 5px;
-   }	
+	height: 70px;
+	width: 500px;
+   }
+   
+h1 {
+	margin-top: 90px;
+	font-size: 70px;
+	}
+	
+#para2 {
+	font-size: 30px;
+	}
+
+#para {
+  font-size: 30px;
+}	
+
   </style>
 </head>
 <body>
@@ -249,27 +290,28 @@ function addCommmm() {
   </div>
   
   <p id="para" style="display: none">
-  Lives in: Bangalore<br>
-  From: Coochbehar<br>
-  Education: B.Tech IT<br>
-  Age:33
+  <strong>Lives in:</strong>&nbsp Bangalore, Karnataka,  India<br>
+  <strong>From:</strong>&nbsp Coochbehar, West Bengal<br>
+  <strong>Education:</strong>&nbsp B.Tech IT, VIT University<br>
+  <strong>DOB:</strong>&nbsp 21/12/1991
   </p>
 
   <p id="para2" style="display: none">
-    <strong>Hobbies</strong><br>
-•Programming<br>
- •Eating<br>
- •Gaming<br>
  <strong>Instagram</strong><br>
 <a  href="https://www.instagram.com/abhishek.kabi.21?igsh=MWt4ODlycXZ1N3BrdQ=="> <img src="ig.png" id="ig"> @abhishek.kabi.21</a>
- 
+<br>
+ <strong>Phone</strong><br>
+ <strong>+91 9332522166</strong>
  </p>
  <hr>
  	
- <h2>Posts</h2>
+ <h2 style="font-size: 40px">Posts</h2>
  <div>
- 	<p class="info"><img src="Image2.jpg" class="pid"><strong>Abhishek Kabi</strong> &nbsp is in  &nbsp <strong>New York City</strong></p>
-     <p> I am at New York, Times Square. </p>
+ 	<div id="container">
+ 	<img src="Image2.jpg" class="pid">
+ 	<p class="info"><strong>Abhishek Kabi</strong> &nbsp is in  &nbsp <strong>New York City</strong></p>
+     </div>
+     <p style="font-size: 35px"> I am at New York, Times Square. </p>
      <img src="nyts.jpg" class="posts">
      	<br>
      	<input type="text" id="comm1" style="display: none"> <button id="btnn" onclick="addCom()" style="display: none">Add</button><br>
@@ -281,8 +323,11 @@ function addCommmm() {
  </div>
  <hr>
  <div>
- <p class="info"><img src="Image2.jpg" class="pid"><strong>Abhishek Kabi</strong></p>
- <p> Having Biryani..</p>
+ <div id="container2">
+ <img src="Image2.jpg" class="pid">
+ <p class="info"><strong>Abhishek Kabi</strong>&nbsp uploaded a photo</p>
+ </div>
+ <p style="font-size: 35px"> Having Biryani..</p>
  <img src="biryani.jpeg" class="posts">
  	<br>
  	<input type="text" id="comm2" style="display: none"> <button id="btnn2" onclick="addComm()" style="display: none">Add</button><br>
@@ -294,8 +339,11 @@ function addCommmm() {
  </div>
  <hr>
  	<div>
- 	 <p class="info"><img src="Image2.jpg" class="pid"><strong>Abhishek Kabi</strong></p>
- <p>My city Coochbehar... the royal city.</p>
+ 	<div id="container2">
+ 	<img src="Image2.jpg" class="pid">
+ 	 <p class="info"><strong>Abhishek Kabi</strong>&nbsp uploaded a photo</p>
+      </div>
+ <p style="font-size: 35px">My city Coochbehar... the royal city.</p>
   <img src="cob.jpg" class="posts">
   	<br>
  	<input type="text" id="comm3" style="display: none"> <button id="btnn3" onclick="addCommm()" style="display: none">Add</button><br>
@@ -307,8 +355,11 @@ function addCommmm() {
          </div>
          <hr>
          	<div>
-         	<p class="info"><img src="Image2.jpg" class="pid"><strong>Abhishek Kabi</strong></p>
-         <p>I love Bangalore ❤️ </p>
+         	<div id="container2">
+         	<img src="Image2.jpg" class="pid">
+         	<p class="info"><strong>Abhishek Kabi</strong>&nbsp uploaded a photo</p>
+             </div>
+         <p style="font-size: 35px">I love Bangalore ❤️ </p>
          <img src="blr.jpeg" class="posts">
          	<br>
  	<input type="text" id="comm4" style="display: none"> <button id="btnn4" onclick="addCommmm()" style="display: none">Add</button><br>
