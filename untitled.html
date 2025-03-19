@@ -4,58 +4,50 @@
   <style>
   button {
   border: solid 1px;
-  border-radius: 8px;
-  background-color: #1D428A;
+  border-radius: 5px;
+  background-color: blue;
   color: white;
   margin: 8px 0 0 0;
   padding: 5px;
-  width: 190px;
-  height: 59px;
-  font-size: 30px;
+  width: 75px;
 }
 
 .proPic {
-	height: 350px;
-	width: 350px;
-	border-radius: 175px;
+	height: 150px;
+	width: 150px;
+	border-radius: 75px;
 	position: absolute;
 	left: 10px;
-	top: 200px;
+	top: 110px;
 	}
 	
 .add {
 	border: solid 1px;
-	border-radius: 8px;
-	width: 230px;
-	height: 70px;
+	border-radius: 5px;
+	width: 150px;
 	color: white;
-	background-color: #6F00FF;
+	background-color: blue;
 	}
 	
 .pid {
-	height: 80px;
-	width: 80px;
+	height: 20px;
+	width: 20px;
 	margin: 0 3px 0 0;
-	border-radius: 40px;
+	border-radius: 10px;
 	
 	}
 	
 .info {
-	font-size: 40px;
-	margin-top: 11px;
-	}
-.container {
 	display: flex;
-	margin-top: 10px;
-}
+	}
 	
 .posts {
-	height: 500px;
+	height: 250px;
 	width: 100%;
 	}
 	
 .cover {
-	height: 435px;
+	height: 235px;
 	width: 100%;
 	position: relative;
 	border-radius: 5px;
@@ -77,27 +69,30 @@
 	}
 	
 #ig {
-	height: 50px;
-	width: 50px;
+	height: 20px;
+	width: 20px;
 	}
 	
 a {
 	color: gray;
 	display: flex;
 	}
-
-h1 {
-	margin: 130px 0 0 0;
-	font-size: 60px;
-}
-
-h2 {
-	font-size: 60px;
-}
-
-#para {
-	color: gray;
-}
+	
+#comm1 {
+	margin-top: 5px;
+	}
+	
+#comm2 {
+	margin-top: 5px;
+	}
+	
+#comm3 {
+	margin-top: 5px;
+	}
+	
+#comm4 {
+	margin-top: 5px;
+   }	
   </style>
 </head>
 <body>
@@ -172,7 +167,7 @@ function addF() {
 	else
        {
 		document.getElementById("addfr").innerHTML = "Add Friend";
-		document.getElementById("addfr").style.backgroundColor = "#6F00FF";
+		document.getElementById("addfr").style.backgroundColor = "blue";
 		}
 	}
 	
@@ -186,8 +181,57 @@ function follo() {
 	else
        {
 		document.getElementById("flw").innerHTML = "Follow";
-		document.getElementById("flw").style.backgroundColor = "#6F00FF";
+		document.getElementById("flw").style.backgroundColor = "blue";
 		}
+	}
+	
+function coMent() {
+	
+		document.getElementById('comm1').style.display = "block";
+		document.getElementById('btnn').style.display = "block";
+		}
+		
+function addCom() {
+	let val = document.getElementById("comm1").value;
+	document.getElementById("compara").innerHTML = val;
+	document.getElementById('comm1').style.display = "none";
+		document.getElementById('btnn').style.display = "none";
+	}
+	
+function coMentt() {
+	document.getElementById('comm2').style.display = "block";
+		document.getElementById('btnn2').style.display = "block";
+		}
+		
+function addComm() {
+	let val2 = document.getElementById("comm2").value;
+	document.getElementById("compara2").innerHTML = val2;
+	document.getElementById('comm2').style.display = "none";
+		document.getElementById('btnn2').style.display = "none";
+	}
+
+function coMenttt() {
+	document.getElementById('comm3').style.display = "block";
+		document.getElementById('btnn3').style.display = "block";
+		}
+
+function addCommm() {
+	let val3 = document.getElementById("comm3").value;
+	document.getElementById("compara3").innerHTML = val3;
+	document.getElementById('comm3').style.display = "none";
+		document.getElementById('btnn3').style.display = "none";
+	}
+	
+function coMentttt() {
+	document.getElementById('comm4').style.display = "block";
+		document.getElementById('btnn4').style.display = "block";
+	}
+	
+function addCommmm() {
+	let val4 = document.getElementById("comm4").value;
+	document.getElementById("compara4").innerHTML = val4;
+	document.getElementById('comm4').style.display = "none";
+		document.getElementById('btnn4').style.display = "none";
 	}
 	
 </script>
@@ -205,76 +249,73 @@ function follo() {
   </div>
   
   <p id="para" style="display: none">
-  <strong>Lives in:</strong> Bangalore, India<br>
-  <strong>From:</strong> Coochbehar, West Bengal<br>
-  <strong>Education:</strong> B.Tech IT, VIT University<br>
-  <strong>DOB</strong>:21/12/1991
+  Lives in: Bangalore<br>
+  From: Coochbehar<br>
+  Education: B.Tech IT<br>
+  Age:33
   </p>
 
   <p id="para2" style="display: none">
-    
+    <strong>Hobbies</strong><br>
+•Programming<br>
+ •Eating<br>
+ •Gaming<br>
  <strong>Instagram</strong><br>
-<a href="https://www.instagram.com/abhishek.kabi.21?igsh=MWt4ODlycXZ1N3BrdQ==" style="font-size: 40px;"> <img src="ig.png" id="ig"> @abhishek.kabi.21</a>
-<br>	  
- <strong>Phone</strong><br>
- <strong>+91 9332522166</strong>
-
+<a  href="https://www.instagram.com/abhishek.kabi.21?igsh=MWt4ODlycXZ1N3BrdQ=="> <img src="ig.png" id="ig"> @abhishek.kabi.21</a>
+ 
  </p>
  <hr>
  	
  <h2>Posts</h2>
  <div>
-	 <div class="container">
- 	<img src="Image2.jpg" class="pid">
-	 <p class="info"><strong>Abhishek Kabi</strong> &nbsp is in  &nbsp <strong>New York City</strong></p>
-	 </div>
-     <p style="font-size: 40px"> I am at New York, Times Square. </p>
+ 	<p class="info"><img src="Image2.jpg" class="pid"><strong>Abhishek Kabi</strong> &nbsp is in  &nbsp <strong>New York City</strong></p>
+     <p> I am at New York, Times Square. </p>
      <img src="nyts.jpg" class="posts">
+     	<br>
+     	<input type="text" id="comm1" style="display: none"> <button id="btnn" onclick="addCom()" style="display: none">Add</button><br>
+     	<p id="compara"></p>
      	<p style="display: none" id="liked">You liked this </p>
      	<button  id="lb1"onclick="likeOne()">Like</button>
-         <button>Comment</button>
+         <button onclick="coMent()">Comment</button>
          <button>Share</button>
  </div>
  <hr>
-	<br>
  <div>
- <div class="container">
- <img src="Image2.jpg" class="pid">
- <p class="info"><strong>Abhishek Kabi</strong>&nbsp uploaded a photo</p>
- </div>
- <p style="font-size: 40px"> Having Biryani..</p>
+ <p class="info"><img src="Image2.jpg" class="pid"><strong>Abhishek Kabi</strong></p>
+ <p> Having Biryani..</p>
  <img src="biryani.jpeg" class="posts">
+ 	<br>
+ 	<input type="text" id="comm2" style="display: none"> <button id="btnn2" onclick="addComm()" style="display: none">Add</button><br>
+     	<p id="compara2"></p>
  	<p style="display: none" id="liked2">You liked this </p>
  	<button id="lb2"onclick="likeTwo()">Like</button>
-         <button>Comment</button>
+         <button onclick="coMentt()">Comment</button>
          <button>Share</button>
  </div>
  <hr>
-	 <br>
  	<div>
-	 <div class="container">
-	 <img src="Image2.jpg" class="pid">
- 	 <p class="info"><strong>Abhishek Kabi</strong>&nbsp uploaded a photo</p>
-	 </div>
- <p style="font-size: 40px">My city Coochbehar... the royal city.</p>
+ 	 <p class="info"><img src="Image2.jpg" class="pid"><strong>Abhishek Kabi</strong></p>
+ <p>My city Coochbehar... the royal city.</p>
   <img src="cob.jpg" class="posts">
+  	<br>
+ 	<input type="text" id="comm3" style="display: none"> <button id="btnn3" onclick="addCommm()" style="display: none">Add</button><br>
+     	<p id="compara3"></p>
   	<p style="display: none" id="liked3">You liked this </p>
  	<button id="lb3" onclick="likeThree()">Like</button>
-         <button>Comment</button>
+         <button onclick="coMenttt()">Comment</button>
          <button>Share</button>
          </div>
          <hr>
-	  <br>
          	<div>
-		<div class="container">
-		<img src="Image2.jpg" class="pid">
-         	<p class="info"><strong>Abhishek Kabi</strong>&nbsp uploaded a photo</p>
-		</div>
-        <p style="font-size: 40px"> love Bangalore ❤️ </p>
+         	<p class="info"><img src="Image2.jpg" class="pid"><strong>Abhishek Kabi</strong></p>
+         <p>I love Bangalore ❤️ </p>
          <img src="blr.jpeg" class="posts">
+         	<br>
+ 	<input type="text" id="comm4" style="display: none"> <button id="btnn4" onclick="addCommmm()" style="display: none">Add</button><br>
+     	<p id="compara4"></p>
          	<p style="display: none" id="liked4">You liked this </p>
  	<button id="lb4" onclick="likeFour()">Like</button>
-         <button>Comment</button>
+         <button onclick="coMentttt()">Comment</button>
          <button>Share</button>
          </div>
          
